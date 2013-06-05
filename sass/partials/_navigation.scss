@@ -2,8 +2,6 @@ nav {
   position: relative;
   @include background($nav-bg-front, $nav-bg-back);
   background-color: $nav-bg;
-  border-top: 1px solid $nav-border-top;
-  border-bottom: 1px solid $nav-border-top;
   padding-top: .35em;
   padding-bottom: .35em;
 
@@ -33,9 +31,9 @@ nav {
       @include border-radius(.5em);
       @include background-clip(padding-box);
       @include box-shadow(lighten($nav-bg, 2) 0 1px);
-      background-color: lighten($nav-bg, 15);
+      background-color: lighten($nav-bg, 35);
       border: 1px solid $nav-border;
-      color: #888;
+      color: #ddd;
       &:focus {
         color: #444;
         border-color: #80b1df;
