@@ -4,7 +4,8 @@ title: Disadvantages of Octopress
 date: 2013-06-05 15:09
 comments: true
 categories: 
---- I have been espousing the advantages of Octopress, it wouldn’t be complete without raising some of the potential issues with Octopress as a solution.
+---
+ I have been espousing the advantages of Octopress, it wouldn’t be complete without raising some of the potential issues with Octopress as a solution.
 Importing
 
 Actually, this isn’t really Octopress’ fault, but there are lots of different customised versions of import scripts (such as my Gist). It can be somewhat difficult to know which is the right version to use if you aren’t willing to dive in and fix isues when you see them.
