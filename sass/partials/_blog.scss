@@ -1,9 +1,7 @@
 article {
-  padding-top: 1em;
-  a { 
-    @extend .force-wrap;
-    text-decoration: none;
-   }
+  padding-top: 2em;
+  a { @extend .force-wrap; }
+  background: $main-bg;
   header {
     position: relative;
     padding-top: 2em;
@@ -16,7 +14,7 @@ article {
         &:hover { text-decoration: underline; } }
     }
     p {
-      font-size: 1.2em;
+      font-size: .9em;
       color: $text-color-light;
       margin: 0;
       &.meta {
@@ -31,11 +29,10 @@ article {
       background: $img-border bottom left repeat-x;
     }
   }
-
-  .entry-content {
-    margin-top: 26px;
+  h2 {
+    padding-top: 0.8em;
+    background: $img-border top left repeat-x;
   }
-
   .entry-content & h2:first-child, header + h2 { padding-top: 0; }
   h2:first-child, header + h2 { background: none; }
   .feature {
@@ -87,23 +84,20 @@ article {
 
 }
 article + article {
-  .blog-index & {
-    background: $img-border top left repeat-x;
-  }
+    .blog-index & {
+	background: $img-border top left repeat-x;
+    }
 }
 #content .blog-index {
   padding: { top: 0; bottom: 0; }
-  article { padding-top: 2em; }
+  article {
+      padding-top: 2em;
+      background: $main-bg;
+  }
   article header { background: none; padding-bottom: 0; }
   article h1 {
-    font-size: 2em;
-    a { 
-      color: inherit;
-      &:hover { 
-        color: $darkBrick;
-        text-decoration: none;
-      } 
-    }
+    font-size: 2.2em;
+    a { color: inherit; &:hover { color: $link-color-hover; } }
   }
   a[rel=full-article] {
     background: darken($main-bg, 5);
@@ -117,7 +111,7 @@ article + article {
     &:hover {
       background: $link-color-hover;
       text-shadow: none;
-      color: $main-bg;
+      color: main-bg;
     }
   }
   footer {
@@ -136,6 +130,7 @@ article + article {
   text-align: center;
   font-size: .95em;
   position: relative;
+  background: $img-border top left repeat-x;
   padding: {top: 1.5em; bottom: 1.5em;}
   a {
     text-decoration: none;
@@ -147,4 +142,8 @@ article + article {
       &:before, &:after { content: '\2014'; padding: 0 .3em; }
     }
   }
+}
+
+#content > div {
+  padding: 0;
 }
