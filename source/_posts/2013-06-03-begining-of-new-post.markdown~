@@ -7,7 +7,7 @@ categories:
 ---
 You’ve got your niche, then what? It’s time to write your blog, but how do you choose a topic? With so much to choose from, it gets confusing, but we are here to help you sort it all out.
 
-{img "http://c525052.r52.cf0.rackcdn.com/StillDontHaveYourOwnBlog_Hover.jpg"}
+{% img "http://c525052.r52.cf0.rackcdn.com/StillDontHaveYourOwnBlog_Hover.jpg" %}
 
 Congratulations! You’ve made it this far. You’ve got your niche, figured out what you want to talk about, who the other players in the niche are, decided what you like about them, what you don’t like about them, and you’ve started interacting with their readers on their blog and you have begun to build up your presence. Now what?
 Now you write your first blog post.
