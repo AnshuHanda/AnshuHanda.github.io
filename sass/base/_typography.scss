@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // $font-icon: FontAwesome;
 $font-icon-path: "/font/cubano-regular-webfont";
 
@@ -24,6 +25,18 @@ $header-subtitle-font-family: $heading-font-family !default;
 
 // Fonts
 header h1 {
+=======
+$blockquote: $type-border !default;
+$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+$heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
+$header-title-font-family: $heading-font-family !default;
+$header-subtitle-font-family: $heading-font-family !default;
+
+// Fonts
+.heading {
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   font-family: $heading-font-family;
 }
 .sans { font-family: $sans; }
@@ -32,6 +45,10 @@ header h1 {
 
 body > header h1 {
   font-size: 2.2em;
+<<<<<<< HEAD
+=======
+  @extend .heading;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   font-family: $header-title-font-family;
   font-weight: normal;
   line-height: 1.2em;
@@ -42,15 +59,22 @@ body > header h2 {
 }
 
 body {
+<<<<<<< HEAD
   line-height: 2em;
   color: $white;
   @extend .sans;
+=======
+  line-height: 1.5em;
+  color: $text-color;
+  @extend .serif;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 }
 h1 {
   font-size: 2.2em;
   line-height: 1.2em;
 }
 
+<<<<<<< HEAD
 .categories {
   color: $brick;
   .category {
@@ -67,12 +91,18 @@ h1 {
   }
 }
 
+=======
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 @media only screen and (min-width: 992px) {
   body { font-size: 1.15em; }
   h1 { font-size: 2.6em; line-height: 1.2em; }
 }
 
 #{headings()}{
+<<<<<<< HEAD
+=======
+  @extend .heading;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   text-rendering: optimizelegibility;
   margin-bottom: 1em;
   font-weight: bold;
@@ -125,10 +155,14 @@ del, s { text-decoration: line-through; }
 
 abbr, acronym { border-bottom: 1px dotted; cursor: help; }
 
+<<<<<<< HEAD
 pre, code, tt { 
   @extend .mono; 
   background-color: $base03;
 }
+=======
+pre, code, tt { @extend .mono; }
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 
 sub, sup { line-height: 0; }
 
@@ -142,6 +176,7 @@ blockquote {
   $bq-margin: 1.2em;
   font-style: italic;
   position: relative;
+<<<<<<< HEAD
   font-size: 1em;
   line-height: 1.3em;
   padding-left: 1em;
@@ -150,6 +185,16 @@ blockquote {
     font-style: italic;
     a { color: $text-color-light !important; word-wrap: break-word; }
     // &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
+=======
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-left: 1em;
+  border-left: 4px solid rgba($text-color-light, .5);
+  cite {
+    font-style: italic;
+    a { color: $text-color-light !important; word-wrap: break-word; }
+    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   }
   @media only screen and (min-width: 992px) {
     padding-left: 1.5em;

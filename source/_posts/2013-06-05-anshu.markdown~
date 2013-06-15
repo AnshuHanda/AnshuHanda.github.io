@@ -1,0 +1,54 @@
+---
+layout: post
+title: Disadvantages of Octopress
+date: 2013-06-05 15:09
+comments: true
+categories: 
+--- I have been espousing the advantages of Octopress, it wouldn’t be complete without raising some of the potential issues with Octopress as a solution.
+Importing
+
+Actually, this isn’t really Octopress’ fault, but there are lots of different customised versions of import scripts (such as my Gist). It can be somewhat difficult to know which is the right version to use if you aren’t willing to dive in and fix isues when you see them.
+Configuration
+
+Although Octopress is pretty configurable, there are some hard-coded values in some of the plugins. So whilst you can customise (for example) a prefix to be put on the front of the page or category directory, you can’t remove the /page/ or /category/ part of the URL. This may not affect you if you are English speaking, but is likely to be more of a problem if you want your blog to appear in a different language.
+
+It also affects you if you want to change your pages to fall under the ‘/Tag’ directory instead of ‘/category’; you need to move files on both the file system and also the cross-references in the plugin which assume that prefix.
+Regeneration
+
+Like Doctor Who, with Octopress (and perhaps more specifically Jekyll) it’s a regenerate all-the-time approach. Whilst this is needed when you change (for example) the header or navigation bars, in general just adding a new post doesn’t need to cause the entire blog to be regenerated. The previous post would need to be (for the previous/next tags) as well as things like the corresponding tag pages, but regenerating the HTML files for posts back in 2004 isn’t strictly necessary.
+
+As well as refreshing the content of the pages (and affecting timestamps on the file’s modification date, which has issues for HTTP caching) it also takes time. The larger the blog is, the more time it takes to regenerate. The timestamp modification (even if the content is otherwise identical) results in a larger rsync to the destination.
+
+The Rakefile supplied by Octopress is really just a wrapper around a call to Jekyll, and Jekyll doesn’t do partial site regeneration; it’s an all or nothing thing. This might make sense for GitHub, where the content is never known (and thus, it makes sense to play it safe) but it might be overkill for other self-hosted sites.
+
+If using a self-hosted site, rather than rsync to move to another location, it may make sense to store the pages in Git and hten do a git push to the remote location. This would perform delta compression against the prior version, which would result in a faster transfer. I have not done this yet but it is a future optimisation I am thinking of.
+Upgrading
+
+The other major issue is the fact that the code and data are intertwined. The markdown-written posts are in their own _source directory (Jekyll doesn’t copy over directories starting with an underscore) but the Octopress is delivered as a Git repository, with plug-ins in place.
+
+So whilst you can install Jekyll and run it from anywhere, with Octopress this doesn’t seem to be the case. And you probably don’t want to mix up a repository with both blog posts and Jeykll libraries in the same one, not the lesat of which is it would make your blog look like a fork of Octopress if you did so.
+
+Finally the way Octopress works is to generate a ‘template’ site when you first initialize it. (I’m not quite sure where it gets that template from.) This includes things like the way that posts are laid out, the standard headers and footers, the JavaScript libraries that are embedded on the site and so forth.
+
+Unfortunately, this is a write-once approach, in that subsequent changes upstream won’t bring in any differences to templates and the like once they’ve been customised. Although plugins could get updated, the data in the source directory won’t be touched again.
+In an ideal world …
+
+Ideally you would want a separate Git repository for the blog itself (optionally with a submodule for the pointer to the version of Octopress used to generate the code), and have a ‘pristine’ branch which is used for subsequent Octopress initialization attempts. Your blog could then branch off of the Octoprses branch and make changes, so that when you need to upgrade to a later theme or a revamped plugin you can do so with a merge and have the deltas applied automatically.
+
+It could also be the case that the ‘new post’ functionality could generate a git commit record for the post, and the publish could manage the source (and generated html) into a git repository for you. There is support in Octopress for pushing changes to the gh_pages branch of a Git repository (for GitHub’s consumption) so perhaps this could be tighter integrated with a Git managed solution.
+
+There’s really five sets of things to manage:
+
+    The source posts (in Markdown format)
+    The layout and supporting scaffolding (in HTML/Liquid templates)
+    The plugins for Jekyll to know how to process the Liquid templates)
+    The Octopress supporting management code
+    The published HTML
+
+I think the first one should definitely be in a Git repository. The second almost certainly should be, and given that the way Jekyll works, this is overlaid with the first in any case.
+
+The plugins and octopress management code really need to live in a different Git repository, though, so that they can be upgraded independently.
+Summary
+
+Nothing in life is perfect, and Octopress remains a highly powerful and customisable solution. However, it can be improved and this post aims to describe those situations where they could be fixed.
+

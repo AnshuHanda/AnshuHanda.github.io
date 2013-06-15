@@ -1,3 +1,21 @@
+<<<<<<< HEAD
 [submodule ".themes/cyan"]
 	path = .themes/cyan
 	url = git://github.com/octothemes/cyan.git
+=======
+[submodule ".themes/foxslide"]
+	path = .themes/foxslide
+	url = https://github.com/sevenadrian/foxslide
+[submodule ".themes/constant-cockles"]
+	path = .themes/constant-cockles
+	url = git://github.com/octothemes/constant-cockles.git
+[submodule ".themes/octoflat"]
+	path = .themes/octoflat
+	url = https://github.com/alexgaribay/octoflat
+[submodule ".themes/bucktooth-bumbago"]
+	path = .themes/bucktooth-bumbago
+	url = git://github.com/octothemes/bucktooth-bumbago.git
+[submodule ".themes/budget-bumbago"]
+	path = .themes/budget-bumbago
+	url = git://github.com/octothemes/budget-bumbago.git
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf

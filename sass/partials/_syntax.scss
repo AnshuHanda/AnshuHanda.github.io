@@ -73,7 +73,12 @@ html .gist .gist-file {
   }
 }
 pre {
+<<<<<<< HEAD
   background: $base03;
+=======
+  background: $pre-bg $noise-bg;
+  @include border-radius(.4em);
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   @extend .mono;
   border: 1px solid $pre-border;
   line-height: 1.45em;
@@ -93,10 +98,19 @@ p, li {
     @extend .mono;
     display: inline-block;
     white-space: no-wrap;
+<<<<<<< HEAD
     background: $base03;
     font-size: .8em;
     line-height: 1.5em;
     color: #93a1a1;
+=======
+    background: #fff;
+    font-size: .8em;
+    line-height: 1.5em;
+    color: #555;
+    border: 1px solid #ddd;
+    @include border-radius(.4em);
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
     padding: 0 .3em;
     margin: -1px 0;
   }
@@ -112,7 +126,11 @@ p, li {
   padding: .8em !important;
   overflow-x: auto;
   line-height: 1.45em;
+<<<<<<< HEAD
   background: $base03 !important;
+=======
+  background: $base03 $noise-bg !important;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   color: $base1 !important;
   span { color: $base1 !important; }
   span { font-style: normal !important; font-weight: normal !important; }

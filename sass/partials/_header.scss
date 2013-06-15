@@ -1,13 +1,21 @@
 body > header {
+<<<<<<< HEAD
   margin: 0 auto;
   min-height: 200px;
   background: $header-bg;
   text-align: center;
+=======
+  background: $header-bg;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   h1 {
     display: inline-block;
     margin: 0;
     a, a:visited, a:hover {
+<<<<<<< HEAD
       color: $gray;
+=======
+      color: $title_color;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
       text-decoration: none;
     }
   }
@@ -18,6 +26,7 @@ body > header {
     color: $subtitle-color;
     font-weight: normal;
   }
+<<<<<<< HEAD
   img {
     max-width: 100px;
     max-height: 100px;
@@ -34,4 +43,6 @@ body > header {
       padding-top: 40px;
     }
   }
+=======
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 }

@@ -25,8 +25,14 @@ $header-padding-bottom: 1.5em !default;
   width: auto;
   clear: left;
   margin: 0;
+<<<<<<< HEAD
   padding: 2em 5px;
   // background-color: lighten($sidebar-bg, 2);
+=======
+  padding: 0 $pad-medium 1px;
+  background-color: lighten($sidebar-bg, 2);
+  border-top: 1px solid lighten($sidebar-border, 4);
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   section {
     &.odd, &.even { float: left; width: 48%; }
     &.odd { margin-left: 0; }
@@ -95,8 +101,15 @@ body {
 
 aside.sidebar {
   float: none;
+<<<<<<< HEAD
   @extend .group;
   padding: 2em 5px;
+=======
+  padding: 0 $pad-min 1px;
+  background-color: lighten($sidebar-bg, 2);
+  border-top: 1px solid $sidebar-border;
+  @extend .group;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 }
 
 .flex-content { max-width: 100%; height: auto; }
@@ -120,8 +133,11 @@ body.sidebar-footer {
 
 @media only screen and (min-width: 550px) {
   body > header { font-size: $header-font-size; }
+<<<<<<< HEAD
   aside.sidebar {
   }
+=======
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 }
 @media only screen and (min-width: 750px) {
   aside.sidebar { @include collapse-sidebar; }
@@ -150,6 +166,10 @@ body.sidebar-footer {
   }
   aside.sidebar {
     width: $sidebar-width-medium - $sidebar-pad-medium*2;
+<<<<<<< HEAD
+=======
+    padding: 0 $sidebar-pad-medium $sidebar-pad-medium;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
     background: none;
     clear: none;
     float: left;
@@ -175,6 +195,10 @@ body.sidebar-footer {
   }
   aside.sidebar {
     width: $sidebar-width-wide - $sidebar-pad-wide*2;
+<<<<<<< HEAD
+=======
+    padding: 1.2em $sidebar-pad-wide $sidebar-pad-wide;
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
     .collapse-sidebar & {
       padding: { left: $pad-wide; right: $pad-wide; }
     }

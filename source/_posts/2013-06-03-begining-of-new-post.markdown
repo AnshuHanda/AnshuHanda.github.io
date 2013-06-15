@@ -1,0 +1,16 @@
+---
+layout: post
+title: "How To Write Your First Blog Post"
+date: 2013-06-03 11:48
+comments: true
+categories: 
+---
+You’ve got your niche, then what? It’s time to write your blog, but how do you choose a topic? With so much to choose from, it gets confusing, but we are here to help you sort it all out.
+
+{% img  center http://c525052.r52.cf0.rackcdn.com/StillDontHaveYourOwnBlog_Hover.jpg %}
+
+Congratulations! You’ve made it this far. You’ve got your niche, figured out what you want to talk about, who the other players in the niche are, decided what you like about them, what you don’t like about them, and you’ve started interacting with their readers on their blog and you have begun to build up your presence. Now what?
+Now you write your first blog post.
+
+Oh, how this strikes fear in the hearts of many a blogger… “What will I write about?” They ask “How will I come up with a topic.” Writer’s block sets in at this point and for many, but really, it’s not a problem if you’re writing about something that you are passionate about
+
