@@ -3,9 +3,15 @@
 # ----------------------- #
 
 url: http://AnshuHanda.github.io
-title : My First Blog Page
+<<<<<<< HEAD
+title: My Octopress Blog
+subtitle: A blogging framework for hackers.
+author: Your Name
+=======
+title : ~~~My First Blog~~~
 subtitle: A blogging framework for learners.
 author: Anshu Handa
+>>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 simple_search: http://google.com/search
 description:
 
