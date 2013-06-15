@@ -1,13 +1,9 @@
 article {
   padding-top: 1em;
-<<<<<<< HEAD
   a { 
     @extend .force-wrap;
     text-decoration: none;
    }
-=======
-  a { @extend .force-wrap; }
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   header {
     position: relative;
     padding-top: 2em;
@@ -20,11 +16,7 @@ article {
         &:hover { text-decoration: underline; } }
     }
     p {
-<<<<<<< HEAD
       font-size: 1.2em;
-=======
-      font-size: .9em;
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
       color: $text-color-light;
       margin: 0;
       &.meta {
@@ -39,18 +31,11 @@ article {
       background: $img-border bottom left repeat-x;
     }
   }
-<<<<<<< HEAD
 
   .entry-content {
     margin-top: 26px;
   }
 
-=======
-  h2 {
-    padding-top: 0.8em;
-    background: $img-border top left repeat-x;
-  }
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   .entry-content & h2:first-child, header + h2 { padding-top: 0; }
   h2:first-child, header + h2 { background: none; }
   .feature {
@@ -111,7 +96,6 @@ article + article {
   article { padding-top: 2em; }
   article header { background: none; padding-bottom: 0; }
   article h1 {
-<<<<<<< HEAD
     font-size: 2em;
     a { 
       color: inherit;
@@ -120,10 +104,6 @@ article + article {
         text-decoration: none;
       } 
     }
-=======
-    font-size: 2.2em;
-    a { color: inherit; &:hover { color: $link-color-hover; } }
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   }
   a[rel=full-article] {
     background: darken($main-bg, 5);
@@ -156,10 +136,6 @@ article + article {
   text-align: center;
   font-size: .95em;
   position: relative;
-<<<<<<< HEAD
-=======
-  background: $img-border top left repeat-x;
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   padding: {top: 1.5em; bottom: 1.5em;}
   a {
     text-decoration: none;

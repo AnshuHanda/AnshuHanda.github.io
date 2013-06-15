@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // .side-shadow-border {
 //   @include box-shadow(lighten($sidebar-bg, 5) 0 1px);
 // }
@@ -9,29 +8,11 @@ aside.sidebar {
   section {
     @extend .sans;
     font-size: 1em;
-=======
-.side-shadow-border {
-  @include box-shadow(lighten($sidebar-bg, 5) 0 1px);
-}
-aside.sidebar {
-  overflow: hidden;
-  color: $sidebar-color;
-  text-shadow: lighten($sidebar-bg, 8) 0 1px;
-  a { @extend .force-wrap; }
-  section {
-    @extend .sans;
-    font-size: .8em;
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
     line-height: 1.4em;
     margin-bottom: 1.5em;
     h1 {
       margin: 1.5em 0 0;
       padding-bottom: .2em;
-<<<<<<< HEAD
-=======
-      border-bottom: 1px solid $sidebar-border;
-      @extend .side-shadow-border;
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
       + p {
         padding-top: .4em;
       }
@@ -50,29 +31,19 @@ aside.sidebar {
     list-style: none;
     padding: .5em 0;
     margin: 0;
-<<<<<<< HEAD
-=======
-    border-bottom: 1px solid $sidebar-border;
-    @extend .side-shadow-border;
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
     p:last-child {
       margin-bottom: 0;
     }
   }
   a {
-<<<<<<< HEAD
     color: $white;
     text-decoration: none;
-=======
-    color: inherit;
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
     @include transition(color .5s);
   }
   &:hover a {
     color: $sidebar-link-color;
     &:hover { color: $sidebar-link-color-hover; }
   }
-<<<<<<< HEAD
   .search {
     border: none;
     padding: .5em .5em;
@@ -88,8 +59,6 @@ aside.sidebar {
       outline: none;
     }
   }
-=======
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
 }
 .aside-alt-link {
   color: $sidebar-link-color-subdued;

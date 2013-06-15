@@ -3,10 +3,6 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-<<<<<<< HEAD
-=======
-
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
   <title><![CDATA[{{ site.title }}]]></title>
   <link href="{{ site.url }}/atom.xml" rel="self"/>
   <link href="{{ site.url }}/"/>
