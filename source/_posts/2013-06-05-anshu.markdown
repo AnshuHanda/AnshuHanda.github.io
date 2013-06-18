@@ -10,7 +10,7 @@ Importing
 
 Actually, this isn’t really Octopress’ fault, but there are lots of different customised versions of import scripts (such as my Gist). It can be somewhat difficult to know which is the right version to use if you aren’t willing to dive in and fix isues when you see them.
 Configuration
- {%  center img 2013-06-05-anshu.markdown % }
+ {% img http://www.google.co.in/search?client=ubuntu&channel=fs&q=disadvantage+of+octopress&oe=utf-8&redir_esc=&um=1&ie=UTF-8&hl=en&tbm=isch&source=og&sa=N&tab=wi&ei=hyjAUZecCojLrQfh-4DABA&biw=1366&bih=679&sei=jCjAUfS-IoyGkQXMvIGwCw#facrc=_&imgrc=TfCF0WJjWQ7yTM%3A%3Bt02e3tUwyDs1mM%3Bhttp%253A%252F%252Fwww.arcweb.co%252Fassets%252Fimg%252Foctopress.png%3Bhttp%253A%252F%252Fwww.arcweb.co%252F2013%252F06%252F07%252Foctopress%252F%3B400%3B300 % }
 
 Although Octopress is pretty configurable, there are some hard-coded values in some of the plugins. So whilst you can customise (for example) a prefix to be put on the front of the page or category directory, you can’t remove the /page/ or /category/ part of the URL. This may not affect you if you are English speaking, but is likely to be more of a problem if you want your blog to appear in a different language.
 
