@@ -3,7 +3,7 @@
   <title><![CDATA[~~~My First Blog~~~]]></title>
   <link href="http://AnshuHanda.github.io/atom.xml" rel="self"/>
   <link href="http://AnshuHanda.github.io/"/>
-  <updated>2013-06-18T15:15:33+05:30</updated>
+  <updated>2013-06-18T15:24:22+05:30</updated>
   <id>http://AnshuHanda.github.io/</id>
   <author>
     <name><![CDATA[Anshu Handa]]></name>
@@ -17,12 +17,12 @@
     <link href="http://AnshuHanda.github.io/blog/2013/06/05/anshu/"/>
     <updated>2013-06-05T15:09:00+05:30</updated>
     <id>http://AnshuHanda.github.io/blog/2013/06/05/anshu</id>
-    <content type="html"><![CDATA[<p> I have been espousing the advantages of Octopress, it wouldn’t be complete without raising some of the potential issues with Octopress as a solution.
+    <content type="html"><![CDATA[<p> <img src="http://www.arcweb.co/assets/img/octopress.png">
+ I have been espousing the advantages of Octopress, it wouldn’t be complete without raising some of the potential issues with Octopress as a solution.
 Importing</p>
 
 <p>Actually, this isn’t really Octopress’ fault, but there are lots of different customised versions of import scripts (such as my Gist). It can be somewhat difficult to know which is the right version to use if you aren’t willing to dive in and fix isues when you see them.
-Configuration
- <img src="http://www.arcweb.co/assets/img/octopress.png"></p>
+Configuration</p>
 
 <p>Although Octopress is pretty configurable, there are some hard-coded values in some of the plugins. So whilst you can customise (for example) a prefix to be put on the front of the page or category directory, you can’t remove the /page/ or /category/ part of the URL. This may not affect you if you are English speaking, but is likely to be more of a problem if you want your blog to appear in a different language.</p>
 
