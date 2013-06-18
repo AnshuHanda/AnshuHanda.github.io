@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://AnshuHanda.github.io/sitemap.xml 
