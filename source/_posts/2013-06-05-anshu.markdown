@@ -5,7 +5,7 @@ date: 2013-06-05 15:09
 comments: true
 categories: 
 ---
- {% img http://www.arcweb.co/assets/img/octopress.png %}
+ {% img center http://www.arcweb.co/assets/img/octopress.png %}
  I have been espousing the advantages of Octopress, it wouldn’t be complete without raising some of the potential issues with Octopress as a solution.
 Importing
 
