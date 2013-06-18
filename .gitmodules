@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+HEAD
 [submodule ".themes/cyan"]
 	path = .themes/cyan
 	url = git://github.com/octothemes/cyan.git
-=======
 [submodule ".themes/foxslide"]
 	path = .themes/foxslide
 	url = https://github.com/sevenadrian/foxslide
@@ -18,4 +17,4 @@
 [submodule ".themes/budget-bumbago"]
 	path = .themes/budget-bumbago
 	url = git://github.com/octothemes/budget-bumbago.git
->>>>>>> 6a276d15bdaa48cef520e4158526f2c4b16cbaaf
+
